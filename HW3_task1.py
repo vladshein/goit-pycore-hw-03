@@ -47,6 +47,10 @@ def get_days_from_now(date):
 date = "2022-10-22"
 date2 = "2022-aaa-222"
 date3 = 1111
+date4 = "2021-10-09"
+date5 = "2025-10-09"
+
+
 
 #call get_days_from_now with test data
 count = get_days_from_now(date)
@@ -54,4 +58,8 @@ print(count)
 count = get_days_from_now(date2)
 print(count)
 count = get_days_from_now(date3)
+print(count)
+count = get_days_from_now(date4)
+print(count)
+count = get_days_from_now(date5)
 print(count)

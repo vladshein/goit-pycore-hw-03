@@ -9,6 +9,7 @@ def get_numbers_ticket(min, max, quantity):
     #create an empty list for further fulfillment
     quantity_list = []
 
+    #check input parameters type
     if((not isinstance(min,int)) or 
        (not isinstance(max,int)) or 
        (not isinstance(quantity,int))):

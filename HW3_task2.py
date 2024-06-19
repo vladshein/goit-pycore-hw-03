@@ -5,9 +5,15 @@ import random
 def get_numbers_ticket(min, max, quantity):
     print("=========================")
     print("get_numbers_ticket start")
-    
+
     #create an empty list for further fulfillment
     quantity_list = []
+
+    if((not isinstance(min,int)) or 
+       (not isinstance(max,int)) or 
+       (not isinstance(quantity,int))):
+        print("Entered parameters are of incorrect type")
+        return quantity_list
 
     #check input parameters and return empty list in case of issues
     if min < 1:
@@ -47,5 +53,9 @@ print(list2)
 #test data 3
 list3 = get_numbers_ticket(-1, 10, 3)
 print(list3)
+
+#test data 4
+list4 = get_numbers_ticket("-1", 10, 3)
+print(list4)
 
 

@@ -31,10 +31,10 @@ def get_days_from_now(date):
         return None
 
     #convert string to a datetime object
-    parsed_date = datetime.strptime(date, "%Y-%m-%d")
+    parsed_date = datetime.strptime(date, "%Y-%m-%d").date()
 
     #receive current time
-    current_date = datetime.now()
+    current_date = datetime.now().date()
 
     #check the diff between dates
     diff = parsed_date - current_date
